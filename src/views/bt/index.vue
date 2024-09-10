@@ -195,19 +195,23 @@ import { ref } from "vue";
 const installs = ref([
   {
     label: "Centos:",
-    val: "url=https://download.bt.cn/install/install_lts.sh;if [ -f /usr/bin/curl ];then curl -sSO $url;else wget -O install_lts.sh $url;fi;bash install_lts.sh ed8484bec",
+    val: "yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh 12aedbb91",
   },
   {
     label: "Debian:",
-    val: "wget -O install.sh https://download.bt.cn/install/install_lts.sh && bash install.sh ed8484bec",
+    val: "wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && bash install.sh 12aedbb91",
   },
   {
     label: "Ubuntu:",
-    val: "wget -O install.sh https://download.bt.cn/install/install_lts.sh && sudo bash install.sh ed8484bec",
+    val: "wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh 12aedbb91",
+  },
+  {
+    label: "Update安装:",
+    val: "wget -O update.sh http://download.bt.cn/install/update6.sh && sh update.sh 12aedbb91",
   },
   {
     label: "通用安装:",
-    val: "url=https://download.bt.cn/install/install_lts.sh;if [ -f /usr/bin/curl ];then curl -sSO $url;else wget -O install_lts.sh $url;fi;bash install_lts.sh ed8484bec",
+    val: "url=https://download.bt.cn/install/install_lts.sh;if [ -f /usr/bin/curl ];then curl -sSO $url;else wget -O install_lts.sh $url;fi;bash install_lts.sh 12aedbb91",
   },
 ]);
 
