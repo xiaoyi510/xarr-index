@@ -1,0 +1,31 @@
+/** @format */
+@varElTag: ~'.el-tag';
+
+@{varElTag} {
+  //   border: none;
+  //   padding: 0px 5px;
+
+  &--dark {
+    border-color: @primaryColor;
+    background-color: @primaryColor;
+
+    &@{varElTag}--success {
+      border-color: @successColor;
+      background-color: @successColor;
+    }
+    &@{varElTag}--warning {
+      border-color: @warningColor;
+      background-color: @warningColor;
+    }
+    &@{varElTag}--danger {
+      border-color: @dangerColor;
+      background-color: @dangerColor;
+    }
+
+    &@{varElTag}--info {
+      color: @infoFontColor;
+      border-color: @infoColor;
+      background-color: @infoColor;
+    }
+  }
+}

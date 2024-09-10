@@ -1,0 +1,170 @@
+/** @format */
+@buttonBorderRaduis: 3px;
+
+.el-button {
+  //   height: 32px;
+  //   line-height: 32px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: @buttonBorderRaduis;
+
+  &--mini {
+    padding: 5px 14px;
+  }
+
+  &--primary {
+    background-color: @primaryColor;
+    border-color: @primaryColor;
+
+    &:hover,
+    &:focus {
+      border-color: @primarySecondColor;
+      background-color: @primarySecondColor;
+    }
+    &:active {
+      background-color: @primaryColor;
+    }
+  }
+
+  &--success {
+    background-color: @successColor;
+    border-color: @successColor;
+    &:hover,
+    &:focus {
+      border-color: @successSecondColor;
+      background-color: @successSecondColor;
+    }
+
+    &:active {
+      background-color: @successColor;
+    }
+  }
+  &--info {
+    background-color: @infoColor;
+    border-color: @infoColor;
+    color: @infoFontColor;
+  }
+
+  &--warning {
+    background-color: @warningColor;
+    border-color: @warningColor;
+
+    &:hover,
+    &:focus {
+      border-color: @warningSecondColor;
+      background-color: @warningSecondColor;
+    }
+
+    &:active {
+      background-color: @warningColor;
+    }
+  }
+
+  &--danger {
+    background-color: @dangerColor;
+    border-color: @dangerColor;
+    &:hover {
+      border-color: @dangerSecondColor;
+      background-color: @dangerSecondColor;
+    }
+
+    &:active {
+      background-color: @dangerColor;
+    }
+  }
+
+  //   虚线和幽灵
+  &.is-ghost,
+  &.is-dashed,
+  &.is-text {
+    background-color: rgba(255, 0, 0, 0);
+
+    &:hover {
+      background-color: rgba(255, 0, 0, 0);
+    }
+  }
+
+  &.is-dashed {
+    border-style: dashed;
+  }
+
+  &.is-ghost&--primary,
+  &.is-text&--primary,
+  &.is-dashed&--primary,
+  &.is-plain&--primary {
+    color: @primaryColor;
+
+    &:hover,
+    &:focus {
+      color: @primarySecondColor;
+    }
+    &:active {
+      color: @primaryColor;
+    }
+  }
+
+  &.is-ghost&--success,
+  &.is-text&--success,
+  &.is-dashed&--success,
+  &.is-plain&--success {
+    color: @successColor;
+
+    &:hover,
+    &:focus {
+      color: @successSecondColor;
+    }
+    &:active {
+      color: @successColor;
+    }
+  }
+
+  &.is-ghost&--info,
+  &.is-text&--info,
+  &.is-dashed&--info,
+  &.is-plain&--info {
+    color: @infoFontColor;
+  }
+  &.is-ghost&--warning,
+  &.is-text&--warning,
+  &.is-dashed&--warning,
+  &.is-plain&--warning {
+    color: @warningColor;
+
+    &:hover,
+    &:focus {
+      color: @warningSecondColor;
+    }
+    &:active {
+      color: @warningColor;
+    }
+  }
+  &.is-ghost&--danger,
+  &.is-text&--danger,
+  &.is-dashed&--danger,
+  &.is-plain&--danger {
+    color: @dangerColor;
+
+    &:hover,
+    &:focus {
+      color: @dangerSecondColor;
+    }
+    &:active {
+      color: @dangerColor;
+    }
+  }
+
+  &--text,
+  &.is-text {
+    border: none;
+  }
+
+  &.is-round {
+    border-radius: 20px;
+    padding: 8px 23px;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 12px;
+  }
+}

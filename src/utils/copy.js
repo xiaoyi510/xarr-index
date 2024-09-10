@@ -1,0 +1,21 @@
+export function copyToClip(text) {
+  return new Promise((resolve, reject) => {
+    try {
+      if (navigator.clipboard?.writeText) {
+        navigator.clipboard.writeText(text ?? '');
+        resolve(text);
+        return;
+      }
+      const input = document.createElement('textarea');
+      input.setAttribute('readonly', 'readonly');
+      input.value = text;
+      document.body.appendChild(input);
+      input.select();
+      if (document.execCommand('copy')) document.execCommand('copy');
+      document.body.removeChild(input);
+      resolve(text);
+    } catch (error) {
+      reject(error);
+    }
+  });
+}

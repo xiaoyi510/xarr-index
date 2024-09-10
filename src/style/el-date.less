@@ -1,0 +1,36 @@
+.el-date-table {
+  td {
+    &.today {
+      span {
+        color: @primaryColor;
+      }
+    }
+
+    &.current:not(.disabled) {
+      span {
+        background-color: @primaryColor;
+      }
+    }
+  }
+}
+
+.el-date-picker__header-label.active,
+.el-date-picker__header-label:hover {
+  color: @primaryColor;
+}
+
+.el-picker-panel__icon-btn:hover {
+  color: @primaryColor;
+}
+.el-year-table td .cell:hover,
+.el-year-table td.current:not(.disabled) .cell {
+  color: @primaryColor;
+}
+
+.el-month-table td.current:not(.disabled) .cell {
+  color: @primaryColor;
+}
+
+.el-date-table td.available:hover {
+  color: @primaryColor;
+}

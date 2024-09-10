@@ -1,0 +1,53 @@
+.el-input {
+  &__inner {
+    &:focus {
+      border-color: @primaryColor;
+    }
+  }
+}
+
+.el-select {
+  .el-input {
+    &__inner {
+      &:focus {
+        border-color: @primaryColor;
+      }
+    }
+  }
+}
+.el-textarea {
+  &__inner {
+    &:focus {
+      border-color: @primaryColor;
+    }
+  }
+}
+
+.el-switch {
+  &.is-checked &__core {
+    background-color: @primaryColor;
+    border-color: @primaryColor;
+  }
+}
+
+.el-checkbox {
+  &__input.is-checked &__inner {
+    background-color: @primaryColor;
+    border-color: @primaryColor;
+  }
+
+  &__input.is-checked + &__label {
+    color: @primaryColor;
+  }
+}
+
+.el-radio {
+  &__input.is-checked &__inner {
+    background-color: @primaryColor;
+    border-color: @primaryColor;
+  }
+
+  &__input.is-checked + &__label {
+    color: @primaryColor;
+  }
+}

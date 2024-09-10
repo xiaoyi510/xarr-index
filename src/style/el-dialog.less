@@ -1,0 +1,32 @@
+/** @format */
+
+@varDialog: ~'.el-dialog';
+
+@{varDialog} {
+
+  border-radius: 8px;
+
+  &__header {
+    // background-color: black;
+    padding: 8px 20px;
+    border-bottom: 1px solid rgb(228, 228, 228);
+
+    @{varDialog}__title {
+      font-size: 16px;
+    }
+
+    @{varDialog}__headerbtn{
+        top: 12px;
+        right: 14px;
+    }
+  }
+
+  &__footer{
+    border-top: 1px solid rgb(228, 228, 228);
+    padding: 6px 20px;
+    background-color: rgb(249, 249, 249);
+
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}
