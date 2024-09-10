@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32 pb-80"
+      class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 pt-20 text-center lg:pt-32 pb-50"
     >
       <h1
         class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl"
@@ -57,7 +57,7 @@
 
     <div class="p-x-20">
       <div class="mx-auto w-full text-center text-3xl pt-20">产品大全</div>
-      <div class="flex flex-row flex-wrap gap-6">
+      <div class="flex flex-row flex-wrap gap-6 justify-center pt-10">
         <div
           v-for="(item, index) in products"
           :key="index"
@@ -319,7 +319,11 @@
           class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32"
         >
           <div class="flex items-center justify-center">
-            <a href="https://www.bt.cn/u/Xwiupt" target="_blank"  title="宝塔面板">
+            <a
+              href="https://www.bt.cn/u/Xwiupt"
+              target="_blank"
+              title="宝塔面板"
+            >
               <el-image
                 class="h-12"
                 style="color: transparent"
@@ -328,7 +332,11 @@
             </a>
           </div>
           <div class="flex items-center justify-center">
-            <a href="https://www.007idc.cn/aff/XEPHZDTT" target="_blank"  title="零零七">
+            <a
+              href="https://www.007idc.cn/aff/XEPHZDTT"
+              target="_blank"
+              title="零零七"
+            >
               <el-image
                 class="h-12"
                 style="color: transparent"
@@ -337,7 +345,11 @@
             </a>
           </div>
           <div class="flex items-center justify-center">
-            <a href="https://curl.qcloud.com/F9wikzg8" target="_blank" title="腾讯云">
+            <a
+              href="https://curl.qcloud.com/F9wikzg8"
+              target="_blank"
+              title="腾讯云"
+            >
               <el-image
                 class="h-12"
                 style="color: transparent"
