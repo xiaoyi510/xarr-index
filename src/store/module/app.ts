@@ -4,7 +4,7 @@ import { defineStore } from "pinia";
 export const useAppStore = defineStore({
   id: "app",
   state: () => ({
-    webTitle: "XArr"
+    webTitle: "XArr 系列软件官方网站"
   }),
   getters: {},
   actions: {

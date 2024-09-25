@@ -61,23 +61,27 @@
         <div
           v-for="(item, index) in products"
           :key="index"
-          class="max-w-60 border-1 rounded-md overflow-hidden"
+          class="max-w-80 border-1 rounded-md overflow-hidden"
         >
-          <div>
-            <el-image :src="item.image" class="h-40"></el-image>
-          </div>
-          <div class="p-y-4 p-x-3">
-            <div class="text-xl">
-              {{ item.title }}
+          <a :href="item.href" :title="item.desc">
+            <div>
+              <el-image :src="item.image" class="h-60 w-auto"></el-image>
             </div>
-            <div class="text-gray-700 text-sm">{{ item.desc }}</div>
-          </div>
+            <div class="p-y-4 p-x-3">
+              <div class="text-xl">
+                {{ item.title }}
+              </div>
+              <div class="text-gray-500 text-sm pt-2">{{ item.desc }}</div>
+            </div>
+          </a>
         </div>
       </div>
     </div>
 
     <section>
-      <div class="mx-auto w-full text-center text-3xl pt-20">产品价格</div>
+      <div class="mx-auto w-full text-center text-3xl pt-20 pb-10">
+        产品价格
+      </div>
       <div class="mx-auto mt-1 max-w-5xl lg:px-6">
         <div
           class="grid bg-slate-50 sm:px-6 sm:pb-16 md:grid-cols-2 md:rounded-6xl md:px-8 md:pt-16 lg:p-20"
@@ -366,6 +370,15 @@
               />
             </a>
           </div>
+          <div class="flex items-center justify-center">
+            <a href="https://www.zunhuyun.com/" target="_blank" title="尊狐云">
+              <el-image
+                class="h-12 text-xl"
+                style="color: transparent"
+                src="/static/images/zhy.svg"
+              />
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -381,16 +394,19 @@ const products = ref([
     title: "XArrPay个人版",
     desc: "XArrPay 个人版是专门为个人站长打造的支付系统",
     image: "/static/images/person.png",
+    href: "https://pre-person.xarr.cn/",
   },
   {
     title: "XArrPay商户版",
     desc: "XArrPay 商户版是专门为企业及个人站长打造的支付系统",
     image: "/static/images/merchant.png",
+    href: "https://pre-merchant.xarr.cn/",
   },
   {
     title: "XArrRss",
     desc: "XArrRss 是为动漫追剧爱好者设计的一套索引系统",
     image: "/static/images/xarr-rss.png",
+    href: "https://xarr.52nyg.com",
   },
 ]);
 </script>
