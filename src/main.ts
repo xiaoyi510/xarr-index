@@ -10,9 +10,6 @@ import "./style/index.less";
 import "./style/tailwindcss.css";
 
 
-// import './style/variables.scss'
-import "@/assets/icons/iconfont/iconfont.css";
-import "@/assets/icons/iconfont/iconfont.js";
 
 import locale from "element-ui/lib/locale/lang/zh-CN.js"; // lang i18n
 

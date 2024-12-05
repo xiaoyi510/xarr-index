@@ -36,14 +36,11 @@
 </template>
 
 <script lang="ts">
-import { RouterName } from "@/enums/router_name";
 import Vue from "vue";
 
 export default Vue.extend({
   data() {
-    return {
-      RouterName,
-    };
+    return {};
   },
 });
 </script>

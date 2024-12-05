@@ -5,7 +5,6 @@ import NotFound from "@/views/NotFound.vue";
 import Vue from "vue";
 import type { RouteConfig } from "vue-router";
 import VueRouter from "vue-router";
-import { RouterName } from "../enums/router_name";
 import { usePermission } from "./gurad/permission";
 
 Vue.use(VueRouter);
@@ -15,18 +14,18 @@ export const routes: RouteConfig[] = [
     path: "/",
     name: "Home",
     meta: { title: "首页" },
-    redirect: { name: RouterName.index },
+    redirect: { name: 'index' },
     component: FrontendLayout,
     children: [
       {
         path: "/",
-        name: RouterName.index,
+        name: 'index',
         meta: { title: "首页" },
         component: () => import("@/views/index/index.vue"),
       },
       {
         path: "/bt",
-        name: RouterName.bt,
+        name: 'bt',
         meta: { title: "宝塔面板" },
         component: () => import("@/views/bt/index.vue"),
       },

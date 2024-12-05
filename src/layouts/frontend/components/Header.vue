@@ -7,9 +7,8 @@
           <a href="#" class="flex items-center gap-x-2 text-2xl">
             <el-image
               class="h-10 w-auto"
-              src="/static/images/logo.png"
+              src="/static/images/logo_full.svg"
             ></el-image>
-            <span>XArr</span>
           </a>
           <!-- 链接列表 -->
           <div class="hidden md:flex md:gap-x-6">
@@ -43,8 +42,6 @@
 </template>
 
 <script lang="ts">
-import { RouterName } from "@/enums/router_name";
-import { useAppStore } from "@/store/module/app";
 import Vue from "vue";
 export default Vue.extend({
   data() {
