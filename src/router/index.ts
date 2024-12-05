@@ -1,7 +1,6 @@
 /** @format */
 
 import FrontendLayout from "@/layouts/frontend/index.vue";
-import UserLayouts from "@/layouts/user/index.vue";
 import NotFound from "@/views/NotFound.vue";
 import Vue from "vue";
 import type { RouteConfig } from "vue-router";
