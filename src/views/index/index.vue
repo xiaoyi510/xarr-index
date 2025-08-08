@@ -102,7 +102,7 @@
                 <span class="text-[1.75rem] leading-tight text-slate-500"
                   >¥</span
                 ><span class="ml-1 mt-1 text-7xl tracking-tight text-slate-900"
-                  >199</span
+                  >29.9</span
                 >
               </p>
               <div class="order-last mt-8">
