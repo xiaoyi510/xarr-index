@@ -10,12 +10,12 @@
             target="_blank"
             rel="noopener"
             href="http://beian.miit.gov.cn/"
-            >浙ICP备2023049857号</a
+            >蜀ICP备2025174397号</a
           >
         </div>
         <p class="mt-6 text-sm text-slate-500 sm:mt-0">
           Copyright ©
-          <!-- -->2024<!-- -->
+          <!-- -->2026<!-- -->
           XArr. All rights reserved.
         </p>
       </div>
