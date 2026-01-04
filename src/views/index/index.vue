@@ -335,19 +335,7 @@
               />
             </a>
           </div>
-          <div class="flex items-center justify-center">
-            <a
-              href="https://www.007idc.cn/aff/XEPHZDTT"
-              target="_blank"
-              title="零零七"
-            >
-              <el-image
-                class="h-12"
-                style="color: transparent"
-                src="/static/images/007.png"
-              />
-            </a>
-          </div>
+        
           <div class="flex items-center justify-center">
             <a
               href="https://curl.qcloud.com/F9wikzg8"
