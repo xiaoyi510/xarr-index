@@ -322,6 +322,16 @@
         <div
           class="mx-auto mt-20 grid max-w-max grid-cols-1 place-content-center gap-x-32 gap-y-12 sm:grid-cols-3 md:gap-x-16 lg:gap-x-32"
         >
+         <div class="flex items-center justify-center">
+            <a href="https://www.xiaobaiyun.cn:443/aff/RWGWUDJY" target="_blank" title="小白云">
+              <el-image
+                class="h-12 text-xl"
+                style="color: transparent"
+                src="/static/images/xby.png"
+              />
+            </a>
+          </div>
+          
           <div class="flex items-center justify-center">
             <a
               href="https://www.bt.cn/u/Xwiupt"
@@ -367,6 +377,7 @@
               />
             </a>
           </div>
+         
         </div>
       </div>
     </section>
